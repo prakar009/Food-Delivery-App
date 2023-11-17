@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#F5F7F8"
+    tools:context="com.acn.aman.PaymentActivity">
+
+
+    <ImageView
+        android:id="@+id/qrcode"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/qrcode">
+
+    </ImageView>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/qrcode"
+        android:background="@color/black">
+
+    </View>
+
+
+
+    <LinearLayout
+        android:id="@+id/gpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/halfcurve444"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/view2"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+
+
+    <ImageView
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:textSize="16sp"
+        android:background="@drawable/gpay"
+
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:text="UPI ID:">
+
+    </ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google Pay"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="19sp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/phonepe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/halfcurve444"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/gpay"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+
+
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/gpay"
+        android:textSize="16sp"
+        android:background="@drawable/phonepe"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:text="UPI ID:">
+
+    </ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Pay"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="19sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/paytm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/halfcurve444"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/phonepe"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+
+
+
+    <ImageView
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:textSize="16sp"
+        android:background="@drawable/paytm"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+ android:layout_marginLeft="20dp"
+        android:text="UPI ID:">
+
+    </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paytm"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="19sp">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/phonepay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/halfcurve444"
+        android:layout_below="@+id/paytm"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+
+
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:textSize="16sp"
+            android:background="@drawable/phonepe"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="UPI ID:">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Pay"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="19sp">
+
+        </TextView>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/halfcurve444"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/phonepay"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:textSize="16sp"
+            android:background="@drawable/bank"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="UPI ID:">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Transfer"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="19sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/upiIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KHATOON9865@ybl"
+        android:layout_below="@+id/bank"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+
+    <!--    <ImageView-->
+<!--        android:visibility="invisible"-->
+<!--        android:id="@+id/copy1"-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_below="@+id/gpay"-->
+<!--        android:textColor="@color/blue"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginTop="-25dp"-->
+<!--        android:background="@drawable/baseline_content_copy_24">-->
+
+<!--    </ImageView>-->
+
+
+<!--    <View-->
+<!--        android:id="@+id/view3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_below="@+id/copy1"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@color/black">-->
+
+<!--    </View>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/t4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Account No.:"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_below="@+id/view3">-->
+
+<!--    </TextView>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/acno"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="923020020711164"-->
+<!--        android:textColor="@color/blue"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_below="@+id/view3"-->
+<!--        android:layout_toRightOf="@+id/t4"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginLeft="20dp">-->
+
+<!--    </TextView>-->
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/copy2"-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_below="@+id/copy1"-->
+<!--        android:layout_marginTop="47dp"-->
+<!--        android:layout_toRightOf="@+id/acno"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:background="@drawable/baseline_content_copy_24">-->
+
+<!--    </ImageView>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/t5"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="IFSC:"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_below="@+id/copy2">-->
+
+<!--    </TextView>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/ifsc"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="UTIB0005099"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textColor="@color/blue"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_below="@+id/copy2"-->
+<!--        android:layout_toRightOf="@+id/t5"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginLeft="20dp">-->
+
+<!--    </TextView>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/copy3"-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_below="@+id/copy2"-->
+<!--        android:layout_marginTop="37dp"-->
+<!--        android:layout_toRightOf="@+id/ifsc"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:background="@drawable/baseline_content_copy_24">-->
+
+<!--    </ImageView>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/t6"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Account name: "-->
+<!--        android:layout_below="@+id/copy3"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="20dp">-->
+
+<!--    </TextView>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/acname"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="A C N Tour And Travels"-->
+<!--        android:layout_below="@+id/copy3"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/blue"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_toRightOf="@+id/t6"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="20dp">-->
+
+<!--    </TextView>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/copy4"-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_below="@+id/copy3"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_toRightOf="@+id/acname"-->
+<!--        android:background="@drawable/baseline_content_copy_24">-->
+
+<!--    </ImageView>-->
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/t7"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Bank name: "-->
+<!--        android:layout_below="@+id/copy4"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="20dp">-->
+
+<!--    </TextView>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/bankname"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Axis bank"-->
+<!--        android:layout_below="@+id/copy4"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textColor="@color/blue"-->
+<!--        android:layout_toRightOf="@+id/t7"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="20dp">-->
+
+<!--    </TextView>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/copy5"-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_below="@+id/copy4"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_toRightOf="@+id/bankname"-->
+<!--        android:background="@drawable/baseline_content_copy_24">-->
+
+<!--    </ImageView>-->
+
+
+    <ImageView
+        android:id="@+id/whatsap"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="104dp"
+        android:layout_below="@+id/upiIdTextView"
+        android:background="@drawable/whatsap"
+        android:text="Whatsap" />
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="56dp"
+        android:layout_below="@+id/upiIdTextView"
+        android:layout_toRightOf="@+id/whatsap"
+        android:background="@drawable/call"
+        android:text="Call" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/call"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="10dp"
+        android:text="Booking will be confirmed after payment confirmation. \n            Please Chat or Call for further support."
+        android:textColor="#0BA837"
+        android:textSize="14sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/amounttotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="amt">
+
+    </TextView>
+
+
+</RelativeLayout>

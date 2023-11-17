@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context=".InvoiceActivity">
+
+
+
+   <EditText
+       android:id="@+id/etTotal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:hint="etotal">
+
+   </EditText>
+
+    <EditText
+        android:id="@+id/etGST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="GST Value">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etDeliveryCharges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Delivery Charges">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etGrandTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Grand Total">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Discount">
+
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/etNetPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Net Pay">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnPrintPDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="print pdf">
+
+    </Button>
+
+
+</LinearLayout>

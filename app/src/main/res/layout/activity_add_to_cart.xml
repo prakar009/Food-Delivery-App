@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:background="#D8DCDC"
+    tools:context=".AddToCartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/itd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:gravity="center_horizontal"
+        android:text="ITEM(S) ADDED"
+        android:textSize="17sp"
+        android:textStyle="italic">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:padding="10dp"
+        android:layout_below="@+id/itd"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="96dp" />
+
+    <TextView
+        android:id="@+id/addmoreitems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cartRecyclerView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_design"
+        android:padding="10dp"
+        android:textSize="17sp"
+        android:drawableLeft="@drawable/baseline_add_24"
+        android:drawablePadding="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Add more items">
+
+    </TextView>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/itemimg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/addmoreitems"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_launcher_background">
+
+    </ImageView>
+
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemimg"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_design"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtotal"
+            android:textSize="14sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/stotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="200rs"
+            android:textSize="14sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s"
+            android:layout_marginTop="5dp"
+            android:text="GST and restaurent charges"
+            android:textSize="12sp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/gst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stotal"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text="49rs"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/g"
+            android:layout_marginTop="5dp"
+            android:text="Delivery charges"
+            android:textSize="12sp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/dcharges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gst"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text="49rs"
+            android:textSize="12sp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/input_design"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/gt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grand Total"
+            android:textSize="14sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/gtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="200rs"
+            android:textSize="14sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gt"
+            android:layout_marginTop="5dp"
+            android:text="Discount"
+            android:textSize="12sp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gtotal"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text="-49rs"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dis"
+            android:layout_marginTop="5dp"
+            android:text="Net Payable"
+            android:textStyle="bold"
+            android:textSize="14sp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/netpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/discount"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text="490rs"
+            android:textColor="@color/redd"
+            android:textStyle="bold"
+            android:textSize="14sp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/itdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/r2"
+            android:text="PREVIOUS ORDER ITEM(S)"
+            android:textSize="17sp"
+            android:textStyle="italic">
+
+        </TextView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/cartRecyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_design"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="100dp"
+            android:padding="10dp"
+            android:layout_below="@+id/itdd" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal"
+        android:background="@color/redd"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:text="Add Address at next step">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+</ScrollView>
+
+

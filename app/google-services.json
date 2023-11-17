@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1009073276706",
+    "firebase_url": "https://foodadminproject-default-rtdb.firebaseio.com",
+    "project_id": "foodadminproject",
+    "storage_bucket": "foodadminproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009073276706:android:26241187e010136c86077b",
+        "android_client_info": {
+          "package_name": "com.example.foodadminproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0HJ3OGrrqS-xLJJj9gLdqlYF-NhvXXCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009073276706:android:22d5651089f2c5fb86077b",
+        "android_client_info": {
+          "package_name": "com.prakhar.fooddboy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0HJ3OGrrqS-xLJJj9gLdqlYF-NhvXXCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

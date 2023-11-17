@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:id="@+id/card1"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="name"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/greendot"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/greendot"
+            android:layout_below="@+id/name">
+
+        </ImageView>
+
+
+        <ImageView
+            android:id="@+id/bestseller"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@+id/greendot"
+            android:background="@drawable/bestseller">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="password"
+            android:textStyle="bold"
+            android:layout_below="@+id/greendot"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+
+
+
+
+<LinearLayout
+    android:id="@+id/lk"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/mobile"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="12dp"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+
+
+    <ImageView
+
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+        android:background="@drawable/str">
+
+    </ImageView>
+    <ImageView
+
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+        android:background="@drawable/str">
+
+    </ImageView>
+    <ImageView
+
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+        android:background="@drawable/str">
+
+    </ImageView>
+    <ImageView
+
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+        android:background="@drawable/str">
+
+    </ImageView>
+    <ImageView
+
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+        android:background="@drawable/str">
+
+    </ImageView>
+</LinearLayout>
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="12dp"
+        android:text="name"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/designation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Mobile"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:layout_below="@+id/lk"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="address"
+        android:textStyle="italic"
+            android:layout_below="@+id/designation"
+            android:layout_marginTop="40dp"
+            android:textColor="#575050"
+        android:layout_marginBottom="20dp"
+            android:textSize="14sp" />
+
+
+    <ImageView
+        android:id="@+id/purl"
+        android:layout_width="160dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="166dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/designation"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="#CF3636"
+        app:civ_border_width="2dp" />
+
+    <Button
+
+
+
+            android:id="@+id/minus1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/purl"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/designation"
+            android:padding="5dp"
+            android:text="-"
+            android:textSize="17dp">
+
+        </Button>
+
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/purl"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/minus1"
+            android:text="0"
+            android:textSize="14sp">
+
+        </TextView>
+
+
+    <Button
+        android:id="@+id/Plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/purl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/quantity"
+        android:padding="5dp"
+        android:text="+"
+        android:textSize="17dp">
+
+    </Button>
+
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/totalqty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Plus"
+        android:layout_marginLeft="197dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/address"
+        android:text="total quantity">
+
+    </TextView>
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:layout_below="@+id/totalqty"
+    android:layout_marginLeft="10dp"
+    android:textColor="#636767"
+    android:layout_marginRight="10dp"
+   android:text="-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -"
+    >
+
+</TextView>
+
+
+
+
+
+</RelativeLayout>

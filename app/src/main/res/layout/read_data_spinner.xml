@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgg"
+    android:gravity="center_horizontal"
+    tools:context=".ViewAllDataAdmin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+
+
+
+
+        <Spinner
+            android:id="@+id/staff_type_spinner"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="100dp"
+            android:textColorHint="@color/lavender"
+           android:background="@drawable/lavender_border"
+
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+
+        <!-- Rest of the EditText fields -->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/lavender_border"
+            android:textColor="@color/lavender"
+            android:textStyle="bold"
+            android:id="@+id/select"
+            android:text="Select"/>
+
+    </LinearLayout>
+</LinearLayout>

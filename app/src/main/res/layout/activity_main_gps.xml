@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bgg"
+    android:orientation="vertical"
+    tools:context=".Marketing.MainActivityGps">
+
+
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/transparent"
+            android:hint="Enter Your Name or School/College Name ">
+
+        </EditText>
+
+        <!--        <Button-->
+<!--            android:id="@+id/save"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:text="save">-->
+
+<!--        </Button>-->
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/btnStartLocationUpdates"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:background="@drawable/start"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:id="@+id/btnStopLocationUpdates"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/stop"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Upload Image">
+
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on Start Button to Start Live Location"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="#21C54E"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic">
+
+    </TextView>
+
+    <!--    <Button-->
+<!--        android:id="@+id/btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/btnStopLocationUpdates"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="Stop Location Updates" />-->
+
+
+
+</LinearLayout>

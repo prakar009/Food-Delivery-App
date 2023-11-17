@@ -1,0 +1,93 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitCenter" >
+
+    </ImageView>
+
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="@color/black">-->
+
+<!--    </View>-->
+
+
+    <TextView
+        android:id="@+id/namep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/designationp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/addressp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/mobilep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/quantityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity: "
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+       />
+
+
+    <com.rey.material.widget.Button
+        android:id="@+id/add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/lavender_round"
+        android:text="add to cart"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp">
+
+    </com.rey.material.widget.Button>
+
+
+
+</LinearLayout>

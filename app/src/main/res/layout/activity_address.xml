@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8DCDC"
+    android:layout_margin="10dp"
+    tools:context=".AddressActivity">
+
+
+    <TextView
+        android:id="@+id/sd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHIPPING DETAILS"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:textStyle="bold">
+
+    </TextView>
+
+  <EditText
+      android:id="@+id/nme"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_below="@+id/sd"
+      android:hint="Enter Full Name">
+
+  </EditText>
+
+    <EditText
+        android:id="@+id/addres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nme"
+        android:hint="Enter Address">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/mobile2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addres"
+        android:hint="Enter Mobile Number">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/pincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile2"
+        android:hint="Enter Pincode">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/landmark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pincode"
+        android:hint="Enter Landmark/Nearest Location">
+
+    </EditText>
+
+  <RadioButton
+      android:id="@+id/radio_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/landmark"
+      android:layout_marginTop="10dp"
+      android:text="cash on delivery"
+      android:layout_marginLeft="10dp"
+      android:checked="false" />
+
+
+
+    <com.rey.material.widget.Button
+        android:id="@+id/submit3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/radio_button"
+        android:layout_marginTop="10dp"
+        android:text="Submit">
+
+    </com.rey.material.widget.Button>
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:foregroundGravity="center_horizontal">
+
+    </ProgressBar>
+</RelativeLayout>
